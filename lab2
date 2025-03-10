@@ -1,0 +1,13 @@
+def calculate_z(a, b):
+    if a == b:
+        return 9 * a**2 + b
+    elif a > b:
+        return 8 * a - a
+    else:
+        return 7 * a**2 + b
+b = 1.0
+while b <= 2.0:
+    a = 1.5  
+    z = calculate_z(a, b)
+    print(f"a={a}, b={b:.1f} -> z={z:.2f}")
+    b += 0.1
